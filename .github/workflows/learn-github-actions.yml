@@ -1,10 +1,7 @@
 # 教程文章 https://zhuanlan.zhihu.com/p/433426848
 
 name: ci部署项目 # 定义workflow的名称
-on:
-  push:
-    tags:
-      - dp*
+on: [push]
 
 jobs:
   main:
