@@ -11,8 +11,13 @@ jobs:
     runs-on: ubantu-lastest
     steps:
       # 拉起github 仓库代码到github提供的虚拟机工作地点
-      - name: Checkout
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v1
         with:
-          persist-credentials: ''
-
+          node-version: 18.x
+      - name: Dependent installation packaging
+        run: |
+          npm install
+          npm run build --if-present
