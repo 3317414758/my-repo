@@ -55,4 +55,3 @@ jobs:
           ARGS: "-avz --delete"
           SOURCE: "dist/" # 资源路径
           TARGET: /home/${{ env.WEBAPP_NAME }} # 服务器目标路径
-
