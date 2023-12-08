@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubantu-lastest
+    runs-on: ubuntu-latest
     steps:
       # 拉起github 仓库代码到github提供的虚拟机工作地点
       - uses: actions/checkout@v4
